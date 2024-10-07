@@ -47,17 +47,17 @@ h2 {
 /* Biography section styling */
 .bio-container {
     display: flex;
-    align-items: flex-start; /* Align items at the start */
-    gap: 20px; /* Space between the image and text */
-    justify-content: center; /* Center content horizontally */
-    text-align: left; /* Left-align text in the bio text area */
-    margin: 20px 0; /* Optional: Add margin to the top and bottom */
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center; /* Center the image and text */
+    text-align: left;
+    margin: 20px 0;
 }
 
 .bio-image img {
-    width: 150px; /* Set the image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0; /* Remove border-radius for rectangular shape */
+    width: 200px; /* Set the image width */
+    height: 250px; /* Set the image height to make it rectangular */
+    border-radius: 0; /* Ensure the image is a rectangle */
 }
 
 .bio-text {
@@ -82,49 +82,40 @@ h2 {
 /* Info icon styling */
 .info-icon {
     cursor: pointer;
-    font-size: 1.1em; /* Slightly larger for visibility */
-    margin-left: 5px; /* Space between text and icon */
-    vertical-align: middle; /* Align icon vertically with text */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.1em;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
 }
+
 .info-icon:hover {
-    transform: scale(1.5); /* Scale up the icon on hover */
+    transform: scale(1.5); /* Enlarge the icon on hover */
 }
 /* Publications list styling */
 .publications-list {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .publications-list li {
-    margin-bottom: 20px; /* Space between publications */
-    padding: 15px; /* Padding around each publication */
-    border-bottom: 1px solid #ddd; /* Optional: bottom border for separation */
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Separate publications */
 }
 
 .publications-list h3 {
-    font-size: 1.5em; /* Adjust title size */
-    margin: 0; /* Remove margin for consistent spacing */
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .publications-list p {
-    margin: 5px 0; /* Adjust spacing for paragraphs */
+    margin: 5px 0;
 }
-
-/* Info icon styling */
-.info-icon {
-    cursor: pointer;
-    font-size: 1.1em; /* Slightly larger for visibility */
-    margin-left: 5px; /* Space between text and icon */
-    vertical-align: middle; /* Align icon vertically with text */
-}
-
 /* Contact section */
 #contact p {
     text-align: center;
     font-size: 1.2em;
 }
-
 /* Footer */
 footer {
     text-align: center;
