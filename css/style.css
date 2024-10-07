@@ -47,22 +47,22 @@ h2 {
 /* Biography section styling */
 .bio-container {
     display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Space between image and text */
-    margin-bottom: 20px;
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Space between the image and text */
+    justify-content: center; /* Center content horizontally */
+    text-align: left; /* Left-align text in the bio text area */
+    margin: 20px 0; /* Optional: Add margin to the top and bottom */
 }
 
 .bio-image img {
-    width: 150px; /* Adjust the size of the image */
+    width: 150px; /* Set the image width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Makes the image circular */
-    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 0; /* Remove border-radius for rectangular shape */
 }
 
 .bio-text {
-    max-width: 600px; /* Limit the width of the biography text */
+    max-width: 600px; /* Limit the width of the text for readability */
 }
-
 /* Adjustments for smaller screens (responsive design) */
 @media (max-width: 768px) {
     .bio-container {
