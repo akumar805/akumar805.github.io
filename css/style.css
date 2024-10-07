@@ -1,67 +1,63 @@
 /* Apply Montserrat font globally */
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6; /* Adjusts line height for readability */
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-size: 1rem; /* Default font size (16px) */
 }
 
 /* Header styles */
 h1 {
-    font-size: 36px; /* Adjust size to match reference site */
-    font-weight: 700; /* Bold */
-    margin: 0; /* Remove default margin */
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+    margin: 0;
 }
 
 h2 {
-    font-size: 28px; /* About section title */
-    font-weight: 600; /* Semi-bold */
+    font-size: 1.75rem; /* 28px */
+    font-weight: 600;
 }
 
 h3 {
-    font-size: 20px; /* Adjust to match reference site */
-    font-weight: 500; /* Medium */
-    margin: 5px 0; /* Adjust spacing between h3 elements */
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+    margin: 5px 0;
 }
 
 /* Bio text */
 .bio-text p {
-    font-size: 16px; /* Regular paragraph size */
+    font-size: 1rem; /* 16px */
 }
 
 /* General Container for Other Sections */
 section {
-    max-width: 900px; /* Slightly wider than biography */
-    margin: 20px auto; /* Center the section with a margin */
-    padding: 20px; /* Add padding for visual space */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 /* Navigation styles */
 nav {
-    background-color: white; /* Set background color to white */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    padding: 5px 0; /* Add some padding for visual space */
-    position: fixed; /* Make header fixed */
-    top: 0; /* Position it at the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    z-index: 10000; /* Make sure it appears on top of other elements */
-    color: black; /* Black text color */
-    margin: 0; /* Remove margin */
-    text-align: center; /* Center align the navigation items */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.3rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    color: black;
+    margin: 0;
+    text-align: center;
 }
 
 /* Navigation Links */
 nav a {
-    color: black; /* Set link color to black */
-    text-decoration: none; /* Remove underline from links */
-    padding: 15px 20px; /* Add padding to navigation links */
-    display: inline-block; /* Make links inline-block for padding */
-}
-
-/* Active Link Color */
-nav a.active {
-    color: #007bff;; /* Change color for active link */
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1.25rem; /* Adjust padding to 16px 20px equivalent */
+    display: inline-block;
 }
 
 nav ul {
@@ -72,66 +68,52 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    font-family: 'Montserrat', sans-serif; /* Ensure font is consistent in navigation */
-    font-size: 16px; /* Adjust font size */
-    color: black; /* Navigation title color */
-}
-
-nav ul li a.current {
-    color: #007bff; /* Blue color for the active navigation item */
+    margin: 0 1rem;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
+/* Main content padding to prevent overlap with fixed header */
 main {
-    padding: 20px;
+    padding: 1.25rem;
+    padding-top: 4.5rem; /* Adjusted for nav spacing */
 }
 
 .bio-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto; /* Centers the section */
-    max-width: 800px; /* Set the maximum width */
+    margin: 1.25rem auto;
+    max-width: 800px;
 }
 
 .bio-image img {
-    width: 250px; /* Adjust this size */
-    height: 250px; /* Same as width for a circle */
-    border-radius: 50%; /* Circular image */
-    object-fit: cover; /* Ensures the image covers the area */
+    width: 15.625rem; /* 250px */
+    height: 15.625rem; /* 250px */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .bio-info {
-    margin-left: 20px; /* Space between image and text */
-    text-align: left; /* Align text to the left */
-}
-
-.bio-info h2 {
-    margin-bottom: 10px; /* Space below the About heading */
-}
-
-.bio-info h5 {
-    margin: 5px 0; /* Reduce the gap between h5 elements */
+    margin-left: 1.25rem; /* 20px */
+    text-align: left;
 }
 
 .bio-text {
-    max-width: 800px; /* Match the width of the container */
-    margin: 20px auto; /* Center the biography text */
-    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    margin: 1.25rem auto;
+    text-align: left;
 }
 
 .social-links {
-    display: flex; /* Use flexbox for alignment */
-    gap: 10px; /* Space between icons */
-    margin-top: 10px; /* Space above social links */
+    display: flex;
+    gap: 0.625rem; /* 10px */
+    margin-top: 0.625rem;
 }
 
+/* Publications and Talks */
 .publications-list {
     list-style: none;
     padding: 0;
@@ -152,9 +134,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .publication-text {
@@ -163,7 +145,7 @@ main {
 
 .publication-text h4 {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 .publication-text p {
@@ -177,48 +159,105 @@ main {
 
 /* Info Icon Styles */
 .info-icon {
-    position: relative; /* Position context for the tooltip */
-    cursor: pointer; /* Change cursor to indicate clickable */
-    display: inline-block; /* Allow for padding and centering */
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
 
-/* Style for Font Awesome icon */
 .info-icon i {
-    color: black; /* Set icon color to black */
-    font-size: 1.2em; /* Adjust icon size as needed */
-    margin-left: 5px; /* Space between text and icon */
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0.3125rem;
 }
 
 .tooltip-text {
-    visibility: hidden; /* Hide the tooltip by default */
-    width: 200px; /* Set tooltip width */
-    background-color: #555; /* Tooltip background color */
-    color: #fff; /* Tooltip text color */
-    text-align: center; /* Center text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding inside the tooltip */
-    position: absolute; /* Position relative to the info icon */
-    z-index: 1; /* Place tooltip above other elements */
-    bottom: 125%; /* Position above the icon */
-    left: 50%; /* Center horizontally */
-    margin-left: -100px; /* Adjust for width */
-    opacity: 0; /* Start invisible */
-    transition: opacity 0.3s; /* Smooth transition */
+    visibility: hidden;
+    width: 12.5rem; /* 200px */
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -6.25rem; /* -100px */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-/* Show the tooltip when hovering over the info icon */
 .info-icon:hover .tooltip-text {
-    visibility: visible; /* Show the tooltip */
-    opacity: 1; /* Make it fully visible */
+    visibility: visible;
+    opacity: 1;
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    background: #003366; /* Match the navigation color */
-    color: #fff; /* White text color */
+    padding: 1.25rem 0;
+    background: #003366;
+    color: #fff;
 }
-/* Main content padding to prevent overlap with fixed header */
-main {
-    padding-top: 70px; /* Adjust this value according to the height of your header */
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    /* Bio Section */
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image img {
+        width: 9.375rem; /* 150px */
+        height: 9.375rem; /* 150px */
+    }
+
+    .bio-info {
+        margin-left: 0;
+        margin-top: 0.625rem;
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.625rem 0;
+    }
+
+    /* Publications and Talks */
+    .publication-details {
+        flex-direction: column;
+    }
+
+    .publication-text, .publication-links {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .bio-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .bio-image img {
+        width: 12.5rem; /* 200px */
+        height: 12.5rem; /* 200px */
+    }
+
+    .publication-details {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .publication-text, .publication-links {
+        max-width: 100%;
+    }
+
+    .publication-links {
+        text-align: left;
+    }
 }
