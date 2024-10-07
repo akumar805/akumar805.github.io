@@ -40,7 +40,7 @@ section {
 nav {
     background-color: white; /* Set background color to white */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    padding: 10px 0; /* Add some padding for visual space */
+    padding: 5px 0; /* Add some padding for visual space */
     position: fixed; /* Make header fixed */
     top: 0; /* Position it at the top */
     left: 0; /* Align to the left */
