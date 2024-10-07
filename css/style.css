@@ -44,7 +44,41 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+/* Biography section styling */
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 20px;
+}
 
+.bio-image img {
+    width: 150px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+}
+
+.bio-text {
+    max-width: 600px; /* Limit the width of the biography text */
+}
+
+/* Adjustments for smaller screens (responsive design) */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stack image on top of text on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio-image img {
+        margin-bottom: 15px;
+    }
+
+    .bio-text {
+        max-width: 100%;
+    }
+}
 /* Info icon styling */
 .info-icon {
     cursor: pointer;
