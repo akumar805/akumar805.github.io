@@ -6,17 +6,6 @@ body {
     padding: 0;
 }
 
-/* Header Style */
-header {
-    background-color: white; /* Set background color to white */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    padding: 10px 0; /* Add some padding for visual space */
-    position: fixed; /* Make header fixed */
-    top: 0; /* Position it at the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    z-index: 1000; /* Make sure it appears on top of other elements */
-}
 /* Header styles */
 h1 {
     font-size: 36px; /* Adjust size to match reference site */
@@ -49,10 +38,16 @@ section {
 
 /* Navigation styles */
 nav {
-    background: transparent; /* Make navigation background transparent to show header */
+    background-color: white; /* Set background color to white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 10px 0; /* Add some padding for visual space */
+    position: fixed; /* Make header fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 10000; /* Make sure it appears on top of other elements */
     color: black; /* Black text color */
     margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
     text-align: center; /* Center align the navigation items */
 }
 
