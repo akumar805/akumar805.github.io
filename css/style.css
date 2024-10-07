@@ -6,13 +6,14 @@ body {
 }
 
 nav {
-    background: #333;
-    color: #fff;
+    background: #003366; /* Dark blue color for navigation */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -22,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White text color */
     text-decoration: none;
 }
 
@@ -39,10 +40,11 @@ main {
 }
 
 .bio-image img {
-    width: 250px; /* Adjust this size */
-    height: 250px; /* Same as width for a circle */
+    width: 150px; /* Adjust this size */
+    height: 150px; /* Same as width for a circle */
     border-radius: 50%; /* Circular image */
     object-fit: cover; /* Ensures the image covers the area */
+    border: 3px solid #007bff; /* Optional: border color */
 }
 
 .bio-info {
@@ -50,10 +52,18 @@ main {
     text-align: left; /* Align text to the left */
 }
 
+.bio-info h2 {
+    margin-bottom: 10px; /* Space below the About heading */
+}
+
+.bio-info h5 {
+    margin: 5px 0; /* Reduce the gap between h5 elements */
+}
+
 .bio-text {
     max-width: 800px; /* Match the width of the container */
     margin: 20px auto; /* Center the biography text */
-    text-align: center; /* Center text */
+    text-align: left; /* Align text to the left */
 }
 
 .social-links {
@@ -126,6 +136,6 @@ main {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
-    color: #fff;
+    background: #003366; /* Match the navigation color */
+    color: #fff; /* White text color */
 }
