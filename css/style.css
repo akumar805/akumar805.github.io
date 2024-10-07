@@ -205,3 +205,7 @@ footer {
     background: #003366; /* Match the navigation color */
     color: #fff; /* White text color */
 }
+/* Main content padding to prevent overlap with fixed header */
+main {
+    padding-top: 70px; /* Adjust this value according to the height of your header */
+}
