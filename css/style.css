@@ -35,6 +35,13 @@ h3 {
     font-size: 16px; /* Regular paragraph size */
 }
 
+/* General Container for Other Sections */
+section {
+    max-width: 900px; /* Slightly wider than biography */
+    margin: 20px auto; /* Center the section with a margin */
+    padding: 20px; /* Add padding for visual space */
+}
+
 /* Navigation styles */
 nav {
     background: transparent; /* Make navigation background transparent to show header */
