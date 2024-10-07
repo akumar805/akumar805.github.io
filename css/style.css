@@ -135,42 +135,29 @@ main {
 .social-links a {
     color: #007bff; /* Color for social icons */
 }
+
 .publications-list {
-    list-style: none; /* Remove default list style */
-    padding: 0; /* Remove padding */
-}
-
-.publication-entry {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    margin-bottom: 20px; /* Add space between publications */
-}
-
-.publication-title {
-    font-weight: bold; /* Make title bold */
-    margin-bottom: 5px; /* Add space below title */
+    list-style: none;
+    padding: 0;
 }
 
 .publication-details {
-    display: flex; /* Use flexbox for details layout */
-    flex-direction: column; /* Stack elements vertically */
-    margin-bottom: 5px; /* Add space below details */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .publication-links {
-    display: flex; /* Use flexbox for link layout */
-    justify-content: flex-start; /* Align links to the start */
-    gap: 10px; /* Add space between links */
+    text-align: right;
+    min-width: 30%;
 }
 
-/* Additional styles to align DOI links with title */
 .publication-links a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     color: #007bff;
 }
-
 .publication-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 
