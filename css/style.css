@@ -44,6 +44,39 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+/* Main Header Styling */
+.main-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.main-header h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Social Links Styling */
+.social-links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0073e6; /* Adjust color to your preference */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005bb5; /* Darker color on hover */
+}
+
+.social-links {
+    margin-top: 10px;
+}
 /* Biography section styling */
 .bio-container {
     display: flex;
