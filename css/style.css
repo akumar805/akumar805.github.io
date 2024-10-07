@@ -126,23 +126,37 @@ h2 {
 }
 /* Publications list styling */
 .publications-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .publications-list li {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd; /* Separate publications */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.publications-list h3 {
-    font-size: 1.5em;
-    margin: 0;
+.publications-list h4 {
+  margin: 0;
+  font-size: 1.2em;
 }
 
-.publications-list p {
-    margin: 5px 0;
+.publication-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.publication-links a {
+  text-decoration: none;
+  color: #0073e6;
+  margin-bottom: 5px;
+}
+
+.publication-links a:hover {
+  color: #005bb5;
 }
 /* Contact section */
 #contact p {
