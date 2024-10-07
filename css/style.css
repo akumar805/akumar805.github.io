@@ -140,11 +140,44 @@ main {
 .social-links a {
     color: #007bff; /* Color for social icons */
 }
-
 .publications-list {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
 }
+
+.publication-entry {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px; /* Add space between publications */
+}
+
+.publication-title {
+    font-weight: bold; /* Make title bold */
+    margin-bottom: 5px; /* Add space below title */
+}
+
+.publication-details {
+    display: flex; /* Use flexbox for details layout */
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 5px; /* Add space below details */
+}
+
+.publication-links {
+    display: flex; /* Use flexbox for link layout */
+    justify-content: flex-start; /* Align links to the start */
+    gap: 10px; /* Add space between links */
+}
+
+/* Additional styles to align DOI links with title */
+.publication-links a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff;
+}
+
+.publication-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 
 .publication-item {
     display: flex;
@@ -153,12 +186,6 @@ main {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-}
-
-.publication-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .publication-text {
@@ -174,11 +201,6 @@ main {
     margin: 0;
 }
 
-.publication-links {
-    text-align: right;
-    min-width: 30%;
-}
-
 .publication-links p {
     margin: 0;
     line-height: 1.5;
@@ -188,15 +210,6 @@ main {
     cursor: pointer;
     margin-left: 5px;
     font-size: 0.9em;
-}
-
-.publication-links a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.publication-links a:hover {
-    text-decoration: underline;
 }
 
 footer {
