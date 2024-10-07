@@ -35,10 +35,13 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    max-width: 800px; /* Set the maximum width for the biography section */
+    margin-left: auto; /* Center the biography section */
+    margin-right: auto; /* Center the biography section */
 }
 
 .bio-image img {
-    width: 150px; /* Set the width you prefer */
+    width: 200px; /* Set the width you prefer */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
