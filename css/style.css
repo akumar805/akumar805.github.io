@@ -54,11 +54,10 @@ main {
 }
 
 .bio-image img {
-    width: 150px; /* Adjust this size */
-    height: 150px; /* Same as width for a circle */
+    width: 250px; /* Adjust this size */
+    height: 250px; /* Same as width for a circle */
     border-radius: 50%; /* Circular image */
     object-fit: cover; /* Ensures the image covers the area */
-    border: 3px solid #007bff; /* Optional: border color */
 }
 
 .bio-info {
