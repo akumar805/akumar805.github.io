@@ -1,207 +1,117 @@
-/* Global styles */
 body {
-    font-family: 'Helvetica', sans-serif;
-    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f5f5f5;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
+nav {
+    background: #333;
+    color: #fff;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 main {
-    margin-top: 70px;
     padding: 20px;
 }
 
-h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-/* Center the navigation below the header */
-nav {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-list li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.nav-list li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-}
-/* Social Links Styling */
-.social-links a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #0073e6; /* Adjust color to your preference */
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #005bb5; /* Darker color on hover */
-}
-
-.social-links {
-    margin-top: 10px;
-}
-/* Biography section styling */
 .bio-container {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    justify-content: center; /* Center the image and text */
-    text-align: left;
-    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .bio-image img {
-    width: 200px; /* Set the image width */
-    height: 250px; /* Set the image height to make it rectangular */
-    border-radius: 0; /* Ensure the image is a rectangle */
+    width: 150px; /* Set the width you prefer */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.bio-info {
+    margin-left: 20px; /* Space between image and text */
 }
 
 .bio-text {
-    max-width: 600px; /* Limit the width of the text for readability */
-}
-/* Adjustments for smaller screens (responsive design) */
-@media (max-width: 768px) {
-    .bio-container {
-        flex-direction: column; /* Stack image on top of text on smaller screens */
-        align-items: center;
-        text-align: center;
-    }
-
-    .bio-image img {
-        margin-bottom: 15px;
-    }
-
-    .bio-text {
-        max-width: 100%;
-    }
-}
-/* Info icon styling */
-.info-icon {
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-left: 5px;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
+    text-align: center; /* Center text for better readability */
 }
 
-.info-icon:hover {
-    transform: scale(1.5); /* Enlarge the icon on hover */
-}
-/* Publications list styling */
 .publications-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .publication-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 .publication-details {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .publication-text {
-  max-width: 70%;
+    max-width: 70%;
 }
 
 .publication-text h4 {
-  font-weight: bold;
-  margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .publication-text p {
-  margin: 0;
+    margin: 0;
 }
 
 .publication-links {
-  text-align: right;
-  min-width: 30%;
+    text-align: right;
+    min-width: 30%;
 }
 
 .publication-links p {
-  margin: 0;
-  line-height: 1.5;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .info-icon {
-  cursor: pointer;
-  margin-left: 5px;
-  font-size: 0.9em;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.9em;
 }
 
 .publication-links a {
-  text-decoration: none;
-  color: #007bff;
+    text-decoration: none;
+    color: #007bff;
 }
 
 .publication-links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Contact section */
-#contact p {
-    text-align: center;
-    font-size: 1.2em;
-}
-/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
 }
