@@ -188,12 +188,42 @@ main {
     line-height: 1.5;
 }
 
+/* Info Icon Styles */
 .info-icon {
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: 0.9em;
+    position: relative; /* Position context for the tooltip */
+    cursor: pointer; /* Change cursor to indicate clickable */
+    display: inline-block; /* Allow for padding and centering */
 }
 
+/* Style for Font Awesome icon */
+.info-icon i {
+    color: black; /* Set icon color to black */
+    font-size: 1.2em; /* Adjust icon size as needed */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+.tooltip-text {
+    visibility: hidden; /* Hide the tooltip by default */
+    width: 200px; /* Set tooltip width */
+    background-color: #555; /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the tooltip */
+    position: absolute; /* Position relative to the info icon */
+    z-index: 1; /* Place tooltip above other elements */
+    bottom: 125%; /* Position above the icon */
+    left: 50%; /* Center horizontally */
+    margin-left: -100px; /* Adjust for width */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+/* Show the tooltip when hovering over the info icon */
+.info-icon:hover .tooltip-text {
+    visibility: visible; /* Show the tooltip */
+    opacity: 1; /* Make it fully visible */
+}
 footer {
     text-align: center;
     padding: 20px 0;
