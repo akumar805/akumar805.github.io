@@ -132,10 +132,6 @@ main {
     margin-top: 10px; /* Space above social links */
 }
 
-.social-links a {
-    color: #007bff; /* Color for social icons */
-}
-
 .publications-list {
     list-style: none;
     padding: 0;
@@ -151,15 +147,6 @@ main {
     text-align: right;
     min-width: 30%;
 }
-
-.publication-links a {
-    text-decoration: none;
-    color: #007bff;
-}
-.publication-links a:hover {
-    text-decoration: underline;
-}
-
 
 .publication-item {
     display: flex;
