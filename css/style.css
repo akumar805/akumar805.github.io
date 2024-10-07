@@ -51,7 +51,22 @@ section {
 nav {
     background: transparent; /* Make navigation background transparent to show header */
     color: black; /* Black text color */
-    padding: 10px 0;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center align the navigation items */
+}
+
+/* Navigation Links */
+nav a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 20px; /* Add padding to navigation links */
+    display: inline-block; /* Make links inline-block for padding */
+}
+
+/* Active Link Color */
+nav a.active {
+    color: #007bff;; /* Change color for active link */
 }
 
 nav ul {
