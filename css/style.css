@@ -5,9 +5,15 @@ body {
     padding: 0;
 }
 
+header {
+    background: white; /* White background for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow underneath the header */
+    padding: 10px 0;
+}
+
 nav {
-    background: #003366; /* Dark blue color for navigation */
-    color: #ffffff; /* White text color */
+    background: transparent; /* Make navigation background transparent to show header */
+    color: black; /* Black text color */
     padding: 10px 0;
 }
 
@@ -23,8 +29,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* White text color */
+    color: black; /* Black text color for links */
     text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #007bff; /* Blue color for the active navigation item */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 main {
@@ -67,12 +81,13 @@ main {
 }
 
 .social-links {
+    display: flex; /* Use flexbox for alignment */
+    gap: 10px; /* Space between icons */
     margin-top: 10px; /* Space above social links */
 }
 
 .social-links a {
-    margin-right: 10px; /* Space between icons */
-    color: #007bff; /* Color of social icons */
+    color: #007bff; /* Color for social icons */
 }
 
 .publications-list {
