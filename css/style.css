@@ -1,6 +1,7 @@
+/* Apply Montserrat font globally */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6; /* Adjusts line height for readability */
     margin: 0;
     padding: 0;
 }
@@ -11,6 +12,30 @@ header {
     padding: 10px 0;
 }
 
+/* Header styles */
+h1 {
+    font-size: 36px; /* Adjust size to match reference site */
+    font-weight: 700; /* Bold */
+    margin: 0; /* Remove default margin */
+}
+
+h2 {
+    font-size: 28px; /* About section title */
+    font-weight: 600; /* Semi-bold */
+}
+
+h3 {
+    font-size: 20px; /* Adjust to match reference site */
+    font-weight: 500; /* Medium */
+    margin: 5px 0; /* Adjust spacing between h3 elements */
+}
+
+/* Bio text */
+.bio-text p {
+    font-size: 16px; /* Regular paragraph size */
+}
+
+/* Navigation styles */
 nav {
     background: transparent; /* Make navigation background transparent to show header */
     color: black; /* Black text color */
@@ -27,13 +52,13 @@ nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav ul li a {
-    color: black; /* Black text color for links */
-    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; /* Ensure font is consistent in navigation */
+    font-size: 16px; /* Adjust font size */
+    color: black; /* Navigation title color */
 }
 
-nav ul li a.active {
+nav ul li a.current {
     color: #007bff; /* Blue color for the active navigation item */
 }
 
