@@ -130,38 +130,63 @@ nav {
 }
 /* Publications list styling */
 .publications-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
 }
 
-.publications-list li {
+.publication-item {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
-.publications-list h4 {
+.publication-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.publication-text {
+  max-width: 70%;
+}
+
+.publication-text h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.publication-text p {
   margin: 0;
-  font-size: 1.2em;
 }
 
 .publication-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 10px;
+  text-align: right;
+  min-width: 30%;
+}
+
+.publication-links p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.info-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 0.9em;
 }
 
 .publication-links a {
   text-decoration: none;
-  color: #0073e6;
-  margin-bottom: 5px;
+  color: #007bff;
 }
 
 .publication-links a:hover {
-  color: #005bb5;
+  text-decoration: underline;
 }
+
 /* Contact section */
 #contact p {
     text-align: center;
