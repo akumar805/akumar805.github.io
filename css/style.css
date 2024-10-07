@@ -45,6 +45,13 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Info icon styling */
+.info-icon {
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger for visibility */
+    margin-left: 5px; /* Space between text and icon */
+    vertical-align: middle; /* Align icon vertically with text */
+}
 /* Card style */
 .card-container {
     display: flex;
